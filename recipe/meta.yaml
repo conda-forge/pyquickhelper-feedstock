@@ -1,5 +1,5 @@
 {% set name = "pyquickhelper" %}
-{% set version = "1.10.3585" %}
+{% set version = "1.10.3616" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquickhelper-{{ version }}.tar.gz
-  sha256: 98e999d24f5cba90d72a996e80dfd37294b8ef6ecc40487855071c1293674f0b
+  sha256: c199b5e829daaddafa75994c5aaa8723097f7566936dc96b4b5cc235bca11cc8
 
 build:
   number: 0
@@ -48,7 +48,7 @@ test:
 
 about:
   home: http://www.xavierdupre.fr/app/pyquickhelper/helpsphinx/index.html
-  summary: 'Various automations in Python.'
+  summary: Various automations in Python.
   license: MIT
   license_file: LICENSE.txt
 
