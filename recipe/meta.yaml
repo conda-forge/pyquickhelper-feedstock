@@ -1,5 +1,5 @@
 {% set name = "pyquickhelper" %}
-{% set version = "1.10.3616" %}
+{% set version = "1.10.3626" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquickhelper-{{ version }}.tar.gz
-  sha256: c199b5e829daaddafa75994c5aaa8723097f7566936dc96b4b5cc235bca11cc8
+  sha256: 6364a125377a47361e4a6608447be0fc5e71e4a189d71afc70c6771001019f44
 
 build:
   number: 0
