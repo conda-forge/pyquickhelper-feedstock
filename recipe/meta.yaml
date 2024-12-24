@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquickhelper-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyquickhelper-{{ version }}.tar.gz
   sha256: db2bdf4f27542aa2097d3ce74908e8612b7ea2e40aa46b61863b293c33e9bc35
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - encrypt = pyquickhelper.cli.encryption_cli:encrypt
@@ -25,12 +25,12 @@ requirements:
   host:
     - pip
     - pyquicksetup
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - fire
     - numpy >=1.16.0
     - pyquicksetup >=0.2
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -45,6 +45,7 @@ test:
     # - pyq-sync --help  # currently broken: https://github.com/sdpython/pyquickhelper/issues/340
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.xavierdupre.fr/app/pyquickhelper/helpsphinx/index.html
