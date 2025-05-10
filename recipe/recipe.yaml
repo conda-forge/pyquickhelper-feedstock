@@ -29,6 +29,7 @@ requirements:
     - pip
     - pyquicksetup
     - python ${{ python_min }}.*
+    - setuptools
   run:
     - fire
     - numpy >=1.16.0
